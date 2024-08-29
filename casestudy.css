@@ -1,0 +1,578 @@
+
+/* Project Header */
+
+.project-header {
+    margin: 0px 0px 60px 0px;
+}
+
+.case-header {
+    display: flex;
+    width: auto;
+    aspect-ratio: 16/9;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+img.case-study-image {
+    width: auto;
+    min-height: 100px;
+    max-height: 550px;
+    max-width: 700px;
+    min-width: 100px;
+    object-fit: cover; /* Ensure the image fits within the container */
+}
+
+.case-study-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30%;
+}
+
+.case-study-cover.g {
+    max-width: 40%;
+}
+
+h1.case-study-title {
+    text-align: left;
+}
+
+
+
+
+/* Case Break */
+
+.case-break {
+    display: flex;
+    justify-content: space-between;  /* Align text to the left and number to the right */
+    align-items: center;  /* Vertically center the text */
+    border-bottom: 2px solid var(--grey-300);  /* Add a subtle bottom border */
+    margin: 100px 0 40px 0;  /* Adjust margin to create even spacing around the section */
+}
+
+
+/* Case Styles */
+
+.case-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 3rem;
+    width: 100%; /* Ensure it takes up full width */
+    min-height: 100vh; /* Ensure full height to avoid overlap */
+}
+
+.case-content.body {
+    gap: 6rem;
+}
+
+.spotify-current {
+    flex: 1; /* Allow these to take up available space */
+    min-width: 0; /* Prevent flex items from growing too wide */
+}
+
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1; /* Ensure text content takes up available space */
+    flex-shrink: 1;
+    gap: 0.2rem;
+}
+
+
+
+h3 {
+    font-weight: 300;
+    color: var(--grey-900);
+}
+
+h3.subtitle {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h3.subtitle {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h4, h5 {
+    font-family: "Gabarito", sans-serif;
+    letter-spacing: 1px;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+.text-group h4, .three-column-layout h5 {
+    font-weight: 400;
+    color: var(--grey-500);
+}
+ 
+
+ 
+.red {
+    background-color: #af3730;
+}
+
+.blue {
+    background-color: #4EBABA;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.semi-bold {
+    font-weight: 500;
+
+}
+
+.grey-text {
+    color: var(--grey-700);
+}
+
+.red-accent {
+    color: #af3730;
+}
+.bright-red {
+    color: #e24f48;
+
+}
+.green-accent {
+    color: #1db954;
+}
+
+.blue-accent {
+    color: #4EBABA;
+}
+
+.no-padding {
+    margin: 0px;
+}
+
+.padding-top {
+    margin: 5px;
+}
+
+.link {
+    color: #af3730;
+    font-size: calc(1rem / var(--scale-ratio));
+    text-decoration: none;
+}
+
+.spacer {
+    height: 20px; /* Adjust height to the desired spacing */
+}
+
+.spacer2 {
+    height: 40px; /* Adjust height to the desired spacing */
+}
+
+
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 0.7rem;
+}
+
+img {
+    width: 100%;
+    height: auto; 
+}
+
+.rounded-border {
+    border-radius: 15px;
+}
+
+
+/* Three Column Layout */
+
+.three-column-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal-width columns */
+    gap: 10%;  /* Optional: Adds space between the columns */
+    width: auto;
+    max-width: 100%;
+    margin: 20px 0px;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Creates 3 equal-width columns */
+    gap: 10%;  /* Optional: Adds space between the columns */
+    width: auto;
+    max-width: 100%;
+}
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.three-column-layout.content.gstreet {
+    gap: 5% !important;
+}
+
+.three-column-layout.content.gstreet .layout-column {
+    align-items: center;
+    border: 2px solid var(--grey-200);
+    border-radius: 10px; /* Rounded corners to match UI style */
+    padding: 10px 20px; /* Add padding to create space around the content */
+}
+
+
+.content p {
+    color: var(--grey-600); 
+}
+
+.content h4 {
+    font-weight: 500;
+    color: var(--grey-900);
+}
+
+img.target-user  {
+    width: 100px;
+    height: auto;
+}
+
+img.image-box {
+    width: 150px;
+    height: auto;
+    margin-bottom: 13px;
+}
+
+.red-light-background {
+    background-color: #faeaea;   
+    border: 2px solid #af3730;
+    border-radius: 10px; /* Rounded corners to match UI style */
+    padding: 40px; /* Add padding to create space around the content */
+    margin: 20px 0px;
+}
+
+h4.red-light, h5.red-light {
+    color: #f3d6d6; 
+}
+
+h5.blue-light {
+   color: #daf3f3;
+}
+
+
+
+/* Image Columns */
+
+.image-text-column, .two-column {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.image-text-column.align-center {
+    align-items: center;
+}
+
+.width-thirty .text-group {
+    max-width: 30%;
+    flex-grow: 1; 
+}
+
+.width-sixty .text-group {
+    max-width: 60%;
+    flex-grow: 1; 
+}
+
+.width-seventy .text-group {
+    max-width: 70%;
+    flex-grow: 1; 
+}
+
+.width-fifty .text-group {
+    max-width: 50%;
+    flex-grow: 1; 
+}
+
+
+.width-thirty img {
+    max-width: 70%;
+}
+
+.width-fifty img {
+    max-width: 50%;
+}
+
+.width-sixty img {
+    max-width: 40%;
+}
+
+.width-seventy img {
+    max-width: 30%;
+}
+
+.project-gallery.spotify img {
+    max-width: 100%; /* Allow images to fill the container */
+}
+
+.width-fifty img, .width-sixty img, .width-seventy img, .width-thirty img, .project-gallery.spotify {
+    width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is contained within the allocated space */
+    border-radius: 15px; /* Match the styling */
+}
+
+
+
+
+
+
+
+
+
+
+
+.grey-background {
+    padding: 40px;
+    border: 2px solid var(--grey-200);
+    background-color: var(--grey-100);
+    border-radius: 10px; /* Rounded corners for a polished look */
+}
+
+.black {
+    background-color: var(--grey-900); /* Match the background color of your emerging-content section */
+    border-radius: 10px; /* Rounded corners for a polished look */
+    color: #e0e0e0;
+    padding: 40px;
+}
+
+h4.light-text, p.light-text {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h3.light-text {
+    color: white;
+    margin: 0px;
+}
+
+
+
+
+
+/* Gallery */
+
+.project-gallery.spotify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: auto; /* Remove any fixed height if present */
+}
+
+.project-gallery.spotify, .project-gallery.reviews {
+    flex-grow: 1; /* Ensure galleries take up available space */
+    flex-shrink: 1;
+    width: 100%; /* Make sure they don't exceed container width */
+}
+
+.gallery-image, .gallery-image3, .gallery-image2, img.white {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.gallery-image, .gallery-image2, .gallery-image3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    align-items: center;
+     /* Maintain aspect ratio to prevent squishing */
+}
+
+
+
+/*Sneak Peak*/
+
+.sneak-peak {
+    border: 2px solid var(--grey-200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners to match UI style */
+    padding: 40px; /* Add padding to create space around the content */
+    margin: 100px 0px;
+}
+
+.sneak-peak .case-break {
+    margin: 0px 0px 40px 0px;  
+}
+
+
+/* How Might We? */
+
+.how-might-we, .takeaways {
+    border-radius: 10px; /* Rounded corners to match UI style */
+    padding: 40px; 
+    width: 100%;
+}
+   
+.green {
+    background-color: #1db954; /* Light background to make it stand out */
+}
+
+
+
+.how-might-we h3 {
+    color: white;
+    margin: 0px;
+}
+
+h5.light-text {
+    margin-top: 5px;
+    color: #c8f5d7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Large Devices (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium Devices (Tablets, 768px and above) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .case-study-cover {
+        max-width: 40%;
+    }
+
+    .spotify-current .text-group {
+        max-width: 50%;
+    }
+}
+
+/* Shared Styles for Small and Extra Small Devices */
+@media (max-width: 767px) {
+
+    .mar-top {
+        padding-top: 50px;
+    }
+    
+    .case-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .case-study-cover,
+    .case-study-cover.g,
+    img.case-study-image {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .case-study-cover.g {
+        margin-bottom: 20px;
+    }
+
+    /* Layout Adjustments */
+    .three-column-layout, .two-column-layout, .two-column {
+        display: flex;
+        flex-direction: column;
+        gap: 5%; /* Default gap for extra small devices */
+        width: auto;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .three-column-layout.gap, .two-column-layout.gap  {
+        gap: 30px;
+    }
+
+    .two-column-layout.gap, .two-column  {
+        margin: 0px;
+    }
+    
+    .two-column-layout {
+        gap: 10px;
+    }
+
+    .three-column-layout.content.gstreet .layout-column {
+        margin: 20px 0 10px;
+    }
+
+    .two-column h5 {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    /* Project Overview */
+    .image-text-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-text-column.align-center .text-group,
+    .image-text-column.align-top .text-group,
+    .image-text-column.align-center img,
+    .image-text-column.align-top img {
+        max-width: 100% !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .spacer {
+        height: 10px;
+    }
+
+    .spacer2 {
+        height: 20px;
+    }
+
+    .gallery-image2 {
+        border-radius: 10px; /* Default radius for extra small devices */
+    }
+
+    .case-content {
+        gap: 2rem;
+    }
+
+    .case-content.body {
+        gap: 4rem;
+    }
+}
+
+/* Small Devices (Phones, 480px and above) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .three-column-layout, .two-column-layout, .two-column {
+        gap: 10%; /* Override gap for small devices */
+    }
+
+    .gallery-image2 {
+        border-radius: 15px; /* Override radius for small devices */
+    }
+}

@@ -1,0 +1,349 @@
+/* Root Variables for Colors and Font Scaling */
+:root {
+    --base-font-size: 16px;
+    --scale-ratio: 1.333;
+    --grey-100: #f5f5f5;
+    --grey-200: #e0e0e0;
+    --grey-300: #cccccc;
+    --grey-400: #b3b3b3;
+    --grey-500: #999999;
+    --grey-600: #808080;
+    --grey-700: #666666;
+    --grey-800: #4d4d4d;
+    --grey-900: #333333;
+    --grey-1000: #1a1a1a;
+}
+
+html, p {
+    font-size: var(--base-font-size);
+    margin:0;
+}
+
+h1, h2, li {
+    font-family: "Gabarito", sans-serif;
+}
+
+h3, p, h4, h5, ol li {
+    font-family: "Roboto", sans-serif;
+    color: var(--grey-700);
+}
+
+h1 {
+    font-size: calc(1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)); /* ~37.89px */
+}
+
+h2 {
+    font-size: calc(1rem * var(--scale-ratio) * var(--scale-ratio)); /* ~28.44px */
+}
+
+h3 {
+    font-size: calc(1rem * var(--scale-ratio)); /* ~21.33px */
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: calc(1rem / var(--scale-ratio)); /* ~12px */
+    line-height: 1.7;
+}
+
+h6 {
+    font-size: calc(1rem / (var(--scale-ratio) * var(--scale-ratio))); /* ~9px */
+}
+
+small, figcaption {
+    font-size: calc(1rem / var(--scale-ratio)); /* ~12px */
+    color: var(--grey-400);
+}
+
+
+
+
+/* Global Styles */
+
+
+body {
+    margin: 1.5% 5%; /* Reset default margin */
+    width: auto;
+    font-size: 1rem; /* 16px */
+    color: var(--grey-900);
+    background-color: #FCFCFC;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+
+
+/* Navigation Bar */
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    background-color: #FCFCFC;
+    width: 100%;
+}
+
+.nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    margin-left: auto; 
+}
+
+.nav > ul > li > a {
+    text-decoration: none;
+    color: var(--grey-500);
+    transition: color 0.3s ease; 
+}
+
+.nav > ul > li > a:hover {
+    color: rgb(182, 0, 0); 
+}
+
+.nav-toggle {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+a.icon {
+    font-family: "Gabarito", sans-serif;
+    text-decoration: none;
+    color: var(--grey-900);
+    font-size: calc(1rem * var(--scale-ratio)); 
+}
+
+
+
+/* Body Content */
+
+
+.projectbody {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-link {
+    display: flex;
+    flex-direction: row; /* Or column depending on your design */
+    gap: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.flex-link > * {
+    margin: 0;
+    padding: 0;
+}
+
+.logo > img {
+    height: 40px;
+    width: auto;
+    padding-bottom: 10px;
+    max-width: none; /* Override any inherited max-width */
+}
+
+.project-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack the project items vertically */
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: -1px 4px 13px 8px rgba(0, 0, 0, 0.05); /* Initial shadow */
+    padding: 5%;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.project-container.buddy:hover {
+    box-shadow: -1px 4px 13px 8px rgb(78, 186, 186, 0.3); /* Blue shadow for Buddy */
+}
+
+.project-container.spotify:hover {
+    box-shadow: -1px 4px 13px 8px rgb(29, 185, 84, 0.3); /* Green shadow for Spotify */
+}
+
+.project-container.gstreet:hover {
+    box-shadow: -1px 4px 13px 8px rgb(175, 55, 48, 0.3); /* Red shadow for GStreet */
+}
+
+.project-content {
+    display: flex;
+    min-width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border: none;
+    box-shadow: none;
+    flex: 1; /* Allow text to take up available space */
+}
+
+.project-content h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--grey-500);
+}
+
+img.coverprojects {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    min-width: 100px;
+    object-fit: cover; /* Ensure the image fits within the container */
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(182, 0, 0);
+}
+
+header {
+    margin: 5% 0%;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+/* Large Devices (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .header, .footer {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and above) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 85%;
+    }
+
+    .header, .footer {
+        font-size: 1.2em;
+    }
+
+    .main {
+        padding: 15px;
+    }
+}
+
+
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+
+    .cover {
+        padding-top: 10%;
+    }
+
+    .nav {
+        position: relative;
+        width: 99%;
+    }
+
+    .nav ul {
+        display: none; /* Hide the navigation menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+        justify-content: center; /* Center the menu items vertically */
+        align-items: center; /* Center the menu items horizontally */
+        position: fixed; /* Make the menu cover the whole screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+        z-index: 999; /* Make sure it appears on top of other content */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    .nav ul.active {
+        display: flex; 
+    }
+
+    .nav-toggle {
+        display: block; 
+        z-index: 1000; 
+    }
+
+    .nav > ul > li {
+        margin: 20px 0; /* Add margin to each menu item */
+    }
+
+    .nav > ul > li > a {
+        font-size: 24px; /* Increase font size for better visibility */
+        color: #333; /* Ensure the text color is visible */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header, .footer {
+        font-size: 1em;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .projectbody {
+        margin: 15% 0;
+        gap: 50px;
+    }
+
+    .project-container {
+        border-radius: 30px;
+        max-width: 100%; /* Ensure project container does not exceed body width */
+        width: 100%; /* Ensure it stretches to full width within its container */
+    }
+
+    .flex-link {
+        flex-direction: column; /* Ensure the content flows vertically */
+        align-items: center; /* Center the content */
+    }
+    
+
+    
+    .project-content {
+        gap: 0.2rem;
+        padding: 20px;
+        width: 100%;
+    }
+}

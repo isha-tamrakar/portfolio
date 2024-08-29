@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./casestudy.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navigation">
+            <div class="nav">
+                <p class="icon"><a class="icon" href="./index.html">it.</a></p>
+                <div class="nav-toggle" id="navToggle">
+                    &#9776; <!-- Hamburger menu icon -->
+                </div>
+                <ul id="navMenu">
+                    <li><a href="./aboutme.html">About Me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="https://drive.google.com/file/d/1jzMwe32Qxd7Ys0bzEeqhszsnnLmOnwvi/view?usp=sharing">Resume</a></li>
+                </ul> 
+            </div>
+        </nav>
+
+        <div class="body-container">
+            <div class="project-header"> 
+                <header class="case-header">
+                    <div class="case-study-cover">                 
+                        <h3 class="case-study-subtitle">Spotify</h3>
+                        <h1 class="case-study-title">Widgets: Streamline Your Sound</h1>
+                    </div>
+                    <img class="case-study-image" src="./images/spotify/spotify_coverimage.png">
+                </header>
+            
+                <div class="three-column-layout">
+                    <div class="layout-column"> 
+                        <h5>Duration</h5>
+                        <p>Sep 2023 - Feb 2024</p>
+                    </div>
+                    <div class="layout-column"> 
+                        <h5>Team</h5>
+                        <p>Isha Tamrakar, Alexandra Tomita</p>
+                    </div>
+                    <div class="layout-column"> 
+                        <h5>Tools</h5>
+                        <p>User Research, Affinity Mapping, Visual design, Prototyping, AB testing</p>
+                    </div>
+                </div>
+            </div>
+           
+        
+            <div class="case-break">
+                <h5 class="case-break-text">PROJECT OVERVIEW</h5>
+                <h5 class="case-break-number">01</h5>
+            </div>
+
+            <div class="case-content">
+                <div class="image-text-column align-center width-seventy">
+                    <div class="project-gallery spotify">
+                        <img src="./images/spotify/gallery_1.png" class="gallery-image" alt="Image 1">
+                        <img src="./images/spotify/gallery_2.png" class="gallery-image" alt="Image 2" style="display: none;">
+                        <img src="./images/spotify/gallery_3.png" class="gallery-image" alt="Image 3" style="display: none;">
+                        <figcaption>Current Home Page Design</figcaption>
+                    </div>
+                                       
+                    <div class="text-group">
+                        <h4>Current State</h4>
+                        <p>Spotify has evolved from a simple music player into a social application, offering a variety of albums, podcasts, and audiobooks from around the world. They have introduced key features like Discover Weekly, Daily Mixes, Release Radar, AI DJ, and Spotify Jam to encourage users to explore the expanding audio library. The current home page design employs an algorithm to encourage exploration of these features and relevant audio content.
+                        </p>
+                        <div class="spacer"></div>
+                        <h3 class="italic">In what <span class="bold">context</span> do people typically listen to Spotify?</h3>
+                        <p><span class="bold">On-the-Go Usage:</span> Users often listen to Spotify while on the go, such as in the car, while exercising, cleaning, or working on school tasks. They typically commit to a playlist or album choice, put their device aside, and are unlikely to revisit the app.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-group grey-background">
+                    <div class="text-group">
+                        <h4>Emerging Problem</h4>
+                        <h3 class="italic">People find the home page overwhelming...</h3>
+                    </div>
+                    <div class="spacer2"></div>
+                    <div class="project-gallery reviews">
+                        <img src="./images/spotify/review_1.png" class="gallery-image2" alt="Image 1">
+                        <img src="./images/spotify/review_2.png" class="gallery-image2" alt="Image 2" style="display: none;">
+                        <img src="./images/spotify/review_3.png" class="gallery-image2" alt="Image 3" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="text-group">
+                    <h4>Why?</h4>
+                    <p>Based on our interviews, we created a journey map to illustrate the frustration with the Spotify home page stems from the challenge of finding relevant content in a cluttered environment. 
+                    </p>
+                    <img src="./images/spotify/storyboard.png" alt="Image 1">
+                    <div class="spacer2"></div>
+                    <h3>The Culprit: <span class="bold">Choice Phenomenon</span></h3>
+                    <p>We syntheisized our information into these key insights. These issues on the Spotify homepage are responsible for inducing the choice phenomenon:
+                    </p>
+                    <div class="three-column-layout content">
+                        <div class="layout-column"> 
+                            <h4>Decision Overload</h4>
+                            <p>feeling overwhelmed by the amount of options
+                            </p>
+                        </div>
+                        <div class="layout-column"> 
+                            <h4>Decision Fatigue
+                            </h4>
+                            <p>extra mental effort caused by pressure of navigating recommendations and making a decision</p>
+                        </div>
+                        <div class="layout-column"> 
+                            <h4>Paralysis</h4>
+                            <p>struggle to find suitable content causes users to feel stuck</p>
+                        </div>
+                    </div>
+                    <p>Feeling overwhelmed by choices, the user experiences decision fatigue, leading them to opt for a familiar playlist. Consequently, they miss out on the opportunity to explore new music.
+                    </p>
+                </div>
+
+                <div class="how-might-we green">
+                    <h3>HMW mitigate the choice phenomenon by <span class="bold">prioritizing user listening patterns and preferences?</span></h3>
+                </div>
+            </div>
+
+
+
+            <div class="sneak-peak">
+
+                <div class="case-break">
+                    <h5 class="case-break-text">Sneak Peak</h5>
+                    <h5 class="case-break-number">02</h5>
+                </div>
+                <div class="case-content">
+                    <div class="image-text-column align-top width-sixty">
+                        <div class="text-group">
+                            <h4>1/ Widgets
+                            </h4>
+                            <p>Implementing customizable widgets is our solution to declutter Spotify's home page. By condensing features and content into a personalized layout, widgets offer key information at a glance and prompt users to take action within the app. This approach not only combats choice overload but also empowers users to tailor their browsing experience to their preferences, ultimately enhancing engagement and satisfaction with the platform.</p>
+                        </div>
+                        <img src="./images/spotify/widgetgif1.gif" alt="GIF of the widget page.">
+                    </div> 
+                    <div class="spacer"></div>
+                    <div class="image-text-column align-top width-sixty">
+                        <div class="text-group">
+                            <h4>2/ Search Page</h4>
+                            <p>Since users are already accustomed to using the search bar to find new content from external sources, we recognized the potential to enhance engagement by redesigning the search tab. By providing customized recommendations directly on the search tab, we can seamlessly capture users' attention before they even begin their search, thus facilitating exploration in conjunction with engagement via utilizing widgets on the home page.
+                            </p>
+                        </div>
+                        <img src="./images/spotify/searchpagegif2.gif" alt="GIF of the widget page.">
+                    </div> 
+                </div>
+            
+            </div>
+            
+
+            <div class="case-break">
+                <h5 class="case-break-text">Widgets</h5>
+                <h5 class="case-break-number">03</h5>
+            </div>
+
+            <div class="case-content body">
+                <div class="case-summary">
+                    <div class="black"> 
+                        <div class="text-group" class="black">
+                            <h5 class="green-accent">The Goal
+                            </h5>
+                            <h3 class="light-text">Increase the visibility and engagement of features in Spotify with <span class="bold">widgets.</span></h3>
+                        </div>
+                    </div>
+                    <div class="spacer2"></div>
+                    <div class="image-text-column align-center width-sixty grey-background">
+                        <img src="./images/spotify/widget_intro.png" alt="GIF of the widget page.">
+                        <div class="text-group">
+                            <h4>Problem
+                            </h4>
+                            <h3>The cluttered home page <span class="bold">overwhelms users </span>with distractions and <span class="bold">makes it difficult </span>for them to make a quick and satisfying choice.</h3>
+                            <div class="spacer"></div>
+                            <h4>Approach
+                            </h4>
+                            <p>Implementing a customizable home page allows Spotify to condense the variety of features and content they offer to a single page. Widgets are effective in... </p>
+                            <ol>
+                                <li>providing users with key information.</li>
+                                <li>encouraging action within an app.</li>
+                            </ol>
+                            <p class="no-padding">Widgets empower users to tailor their home page according to their preferences. As it combats the choice phenomenon within Spotify by providing a sense of control and alleviating their anxieties.</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="text-group">
+                    <h4>User Study
+                    </h4>
+                    <h3 class="subtitle green-accent">Understanding Usage: Contexts, Patterns, Motivations</h3>                    
+                    <p>We began our research by week-long observation study with six participants to gain insights into their Spotify usage patterns. 
+                    </p>
+                    <p>We gathered data on users' listening contexts, duration, intentions, and emotional reactions during selection. We wanted to know how often and in what situations people use Spotify, and what they felt during this process. We organized our data into a pie chart to depict....
+                    </p>
+                    <div class="image-text-column align-top width-fifty">
+                        <div class="text-group">
+                            <p><span class="bold">Multitasking: </span>Users usually listen to Spotify while doing different activities, such as <span class="bold">work, exercise, commuting, gaming, cooking, and house chores.</span> They only engaged in focused listening sessions 7% of the time.
+                            </p>
+                            <p><span class="bold">Limited Interaction on the Go:</span> In situations like running or driving, users cannot keep interacting with the app, adding pressure to decision-making and reducing the likelihood of active exploration.
+                            </p>
+                        </div>
+                        <img src="./images/spotify/user-study-graph.png" alt="GIF of the widget page.">
+                    </div>
+                </div>
+            
+            
+                <div class="text-group">
+                    <h4>UX Research
+                    </h4>
+                    <h3 class="subtitle green-accent">Impact of Actions on Listening Engagement
+                    </h3>                    
+                    <p>Based on the research findings, several key insights emerge regarding user behavior and its impact on music streaming sessions. The comparison matrix below synthesizes insights directly from our survey and UX research. 
+                    </p>
+                    <p>The action used to initiate a song significantly influences the outcome of the listening session. Features within the streaming platform cater to either discovery or familiar listening experiences. Users' utilization of these features results in varied outcomes, with certain features promoting frequently interrupted listening while others foster a more relaxed, continuous listening experience. This natural bias within the listener shapes the type of session they engage in.
+                    </p>
+                    <div class="image-caption">
+                        <img src="./images/spotify/widgets-uxresearch.png" alt="GIF of the widget page.">
+                        <figcaption>Current Home Page Design</figcaption>
+                    </div>
+                    <div class="spacer"></div>
+                    <p>Capturing user attention within a music streaming platform involves understanding the interplay between different user actions and their impact on listening behavior. The various actions available to users encourage both active and passive listening experiences, influenced by factors such as discoverability and familiarity with content. Active listening occurs when users actively select and queue music, whereas passive listening involves sequential playback without user interaction.
+                    </p>
+                </div>
+
+                <div class="text-group">
+                    <h4>Personas
+                    </h4>
+                    <h3 class="subtitle green-accent">Who's Tuning In? Exploring Spotify Listener Personas
+                    </h3>                    
+                    <p>We organized our research insights into personas based on the themes and pain points identified in our user study and UX research. We created three personas representing potential Spotify users: Socialite, On the Go User, and Music Lover.
+                    </p>
+                    <div class="project-gallery spotify">
+                        <img src="./images/spotify/olivia 2.png" class="gallery-image3" alt="Image 1">
+                        <img src="./images/spotify/pharrell 2.png" class="gallery-image3" alt="Image 2" style="display: none;">
+                        <img src="./images/spotify/trevor 2.png" class="gallery-image3" alt="Image 3" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="image-text-column align-center width-fifty">
+                    <div class="text-group">
+                        <h4>Widget Anatomy
+                        </h4>
+                        <h3 class="subtitle green-accent">Crafting Beautiful Widgets
+                        </h3>   
+                        <p>We conducted research to understand the various components of a widget and determine which design factors enable people to access the information and features they need quickly. This guided our interface design process, helping us create widgets that effectively present information in a clear and efficient manner.
+                        </p>
+                    </div>
+                    <img src="./images/spotify/widget-anatomy.png" alt="GIF of the widget page.">
+                </div>
+
+                <div class="text-group">
+                    <h4>Widget Library
+                    </h4>
+                    <h3 class="subtitle green-accent">Optimizing Widget Selection & Overcoming Choice Paralysis
+                    </h3>                    
+                    <p>Additionally, we experimented with various strategies to personalize the widget selection experience, aligning our process with the priorities identified through our research. Leveraging these insights, we refined our features and implemented methods for organizing sessions, ultimately enhancing user satisfaction and engagement. 
+                    </p>
+                    <img src="./images/spotify/widget_library.png" alt="GIF of the widget page.">
+                </div>
+            </div>
+
+            <div class="case-break">
+                <h5 class="case-break-text">Search Page</h5>
+                <h5 class="case-break-number">04</h5>
+            </div>
+        
+            <div class="case-content body">
+
+                <div class="case-summary">
+                    <div class="black">
+                        <h4 class="light-text">After considering widgets as a potential solution for addressing our issue, we recognized the importance of still aligning with Spotify’s mission to encourage exploration. While widgets offer a promising avenue to boost engagement and personalization within the app, they don't fully support users in exploring diverse content.
+                        </h4>
+                   </div>
+                   <div class="spacer2"></div>
+                    <div class="image-text-column align-center width-sixty grey-background">
+                        <img src="./images/spotify/searchpage2.0.png" alt="GIF of the widget page.">
+                        <div class="text-group">
+                            <h4>Problem
+                            </h4>
+                            <h3>Feeling overwhelmed by choices, the user experiences <span class="bold">decision fatigue, </span>leading them to opt for a familiar playlist. Consequently, they miss out on the opportunity <span class="bold">to explore new music.</span></h3>
+                            <div class="spacer"></div>
+                            <h4>Approach
+                            </h4>
+                            <p class="no-padding">Since users are already accustomed to using the search bar to find new content from external sources, we recognized the potential to enhance engagement by redesigning the search tab. By providing customized recommendations directly on the search tab, we can seamlessly capture users' attention before they even begin their search, thus facilitating exploration in conjunction with engagement via utilizing widgets on the home page.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="text-group"> 
+                    <h4>User Interviews
+                    </h4>
+                    <h3 class="subtitle green-accent">Exploring Music Discovery Beyond Spotify
+                    </h3>                  
+                    <div class="image-text-column width-sixty align-center">
+                        <div class="text-group"> 
+                            <p>To tackle this challenge of enhancing exploration on Spotify, we conducted six interviews focusing on music selection, app usability, usage behavior, exploration habits, and areas for improvement. 
+                            </p>
+                            <p>Upon reviewing our interviews, we revisited how users discover new content. Users discover new music through various channels including Spotify’s Discover Weekly, radios, TikTok, friends, movies, and TV shows, as well as when their favorite artists release music. Methods of discovering music include browsing related artists or songs, finding music online, or through friends playing music in the car. 
+                            </p>
+                            <p>It became evident that most users rely on recommendations from friends or other social media platforms, followed by using the search bar to locate and add content to their libraries.
+                            </p>
+                        </div>
+                        <img src="./images/spotify/music_discovery.png" alt="GIF of the widget page.">
+                    </div>
+                </div>
+
+                <div class="text-group">
+                    <h4>Behavioral Analysis
+                    </h4>
+                    <h3 class="subtitle green-accent">Navigating Spotify: Understanding User Exploration Patterns
+                    </h3>                    
+                    <p>During our research phase, we asked our users to perform tasks designed to assess the intuitiveness of the Spotify app and its various features. Two of the tasks we asked our users to complete were: one focused on creating a blend with a friend, and the other aimed at locating the 'Discover Weekly' playlist—one of Spotify's most popular personalized content recommendations. To further analyze our findings, we created user flow diagrams to illustrate the user interaction with these tasks. Through these tasks, we sought to understand user behaviors, preferences, and pain points within the app's user experience. Our user flow diagrams illustrate the pathways some of our users took to successfully complete these tasks and instances of user failure. Having our users complete these tasks shed light on the strengths and weaknesses of Spotify's UX design to further our design process to address user needs.
+                    </p>
+                    <img src="./images/spotify/journey_map.png" alt="GIF of the widget page.">
+                </div>
+
+                <div class="text-group">
+                    <h4>Sketches & Testing
+                    </h4>
+                    <h3 class="subtitle green-accent">Implementing Exploration: Enhancing Spotify's Search Page
+                    </h3>                    
+                    <img src="./images/spotify/sketches.png" alt="GIF of the widget page.">
+                </div>
+
+            </div>
+
+            <div class="case-break">
+                <h5 class="case-break-text">Takeaways</h5>
+                <h5 class="case-break-number">05</h5>
+            </div>
+           
+            <div class="takeaways green">
+                <div class="two-column">
+                    <h5 class="light-text">Research
+                    </h5>
+                    <p class="light-text">I didn’t have much prior knowledge about the accessibility issues on campus, but learning about the power of research and digging deep into the problem space helped me develop a more comprehensive solution. In the future, I want to build a diverse team that includes people with disabilities, involving them in the design process to truly capture their experiences.</p>
+                </div>
+                <div class="spacer2"></div>
+                <div class="two-column">
+                    <h5 class="light-text">Research
+                    </h5>
+                    <p class="light-text">I didn’t have much prior knowledge about the accessibility issues on campus, but learning about the power of research and digging deep into the problem space helped me develop a more comprehensive solution. In the future, I want to build a diverse team that includes people with disabilities, involving them in the design process to truly capture their experiences.</p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <p>Hi there! I would love to connect.</p>
+                    <p>Find me on <a href="https://drive.google.com/file/d/1jzMwe32Qxd7Ys0bzEeqhszsnnLmOnwvi/view?usp=sharing">LinkedIn</a>. Chat with me at <a href="https://drive.google.com/file/d/1jzMwe32Qxd7Ys0bzEeqhszsnnLmOnwvi/view?usp=sharing">ish4tam@gmail.com</a>.</p>    
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
