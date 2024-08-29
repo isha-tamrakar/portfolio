@@ -226,10 +226,14 @@ footer a {
     color: rgb(182, 0, 0);
 }
 
-header {
+header, footer {
     margin: 5% 0%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
 
 
 
