@@ -127,7 +127,9 @@ a.icon {
     font-size: calc(1rem * var(--scale-ratio)); 
 }
 
-
+.no-padding {
+    margin: 0px;
+}
 
 /* Body Content */
 
@@ -146,7 +148,7 @@ a.icon {
 
 .flex-link {
     display: flex;
-    flex-direction: row; /* Or column depending on your design */
+    flex-direction: row; 
     gap: inherit;
     align-items: inherit;
     justify-content: inherit;
@@ -157,36 +159,86 @@ a.icon {
     padding: 0;
 }
 
+
 .logo > img {
     height: 40px;
     width: auto;
     padding-bottom: 10px;
-    max-width: none; /* Override any inherited max-width */
+    max-width: none; 
 }
+
+.logo {
+    position: relative; /* To ensure both logos overlap perfectly */
+    height: 50px; /* Adjust to the height of the largest logo */
+    width: auto;
+}
+
+.logo img {
+    position: absolute; /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    height: 40px; /* Ensure both logos have the same dimensions */
+    width: auto;
+    transition: opacity 0.3s ease; /* Smooth transition for logo change */
+}
+
 
 .project-container {
     max-width: 100%;
     display: flex;
-    flex-direction: column; /* Stack the project items vertically */
+    flex-direction: column; 
     align-items: center;
     border-radius: 30px;
     box-shadow: -1px 4px 13px 8px rgba(0, 0, 0, 0.05); /* Initial shadow */
     padding: 5%;
     box-sizing: border-box; /* Ensure padding is included in total width */
-    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project-container.buddy:hover {
-    box-shadow: -1px 4px 13px 8px rgb(78, 186, 186, 0.3); /* Blue shadow for Buddy */
+    background-color: #4EBABA; /* Background color on hover */
+    color: white; /* Text color on hover */
 }
 
 .project-container.spotify:hover {
-    box-shadow: -1px 4px 13px 8px rgb(29, 185, 84, 0.3); /* Green shadow for Spotify */
+    background-color: #1db954; /* Background color on hover */
+    color: white; /* Text color on hover */
 }
 
 .project-container.gstreet:hover {
-    box-shadow: -1px 4px 13px 8px rgb(175, 55, 48, 0.3); /* Red shadow for GStreet */
+    background-color: #af3730; /* Background color on hover */
+    color: white; /* Text color on hover */
 }
+/* Ensure the text inside changes to white on hover */
+.project-container:hover h2,
+.project-container:hover h4,
+.project-container:hover h5 {
+    color: white; /* Text color on hover */
+}
+
+.default-logo {
+    opacity: 1;
+}
+
+.hover-logo {
+    opacity: 0;
+}
+
+.project-container:hover .default-logo {
+    opacity: 0; /* Hide the default logo */
+}
+
+.project-container:hover .hover-logo {
+    opacity: 1; /* Show the hover logo */
+}
+
+/* Adjust the link styling to inherit the hover color changes */ 
+.project-container:hover .no-style-link {
+    color: inherit; /* Inherit the color change */
+}
+
+
+
 
 .project-content {
     display: flex;
