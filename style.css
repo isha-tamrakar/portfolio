@@ -131,6 +131,58 @@ a.icon {
     margin: 0px;
 }
 
+
+/* Dropdown Menu Styles */
+
+
+.nav > ul > li {
+    position: relative; /* To position the dropdown menu relative to the parent */
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #FCFCFC;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    min-width: 140px;
+    z-index: 1;
+    left: -60%; /* Start from the middle of the parent */
+    gap: 0; /* Remove any gap between dropdown items */
+}
+
+ul.dropdown-content {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack dropdown items vertically */
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: var(--grey-500); /* Same text color as the main menu items */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease; 
+}
+
+.dropdown-content li a:hover {
+    color: rgb(182, 0, 0); /* Text color on hover */
+}
+
+.nav > ul > li:hover .dropdown-content {
+    display: flex; /* Show the dropdown menu when hovering over the parent */
+}
+
+/* Adjust the appearance of the parent link when dropdown is active */
+.nav > ul > li:hover > a {
+    color: rgb(182, 0, 0); /* Change color of the parent link on hover */
+}
+
+
+
+
 /* Body Content */
 
 
