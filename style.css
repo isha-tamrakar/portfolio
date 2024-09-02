@@ -160,16 +160,10 @@ a.icon {
 }
 
 
-.logo > img {
-    height: 40px;
-    width: auto;
-    padding-bottom: 10px;
-    max-width: none; 
-}
 
 .logo {
     position: relative; /* To ensure both logos overlap perfectly */
-    height: 50px; /* Adjust to the height of the largest logo */
+    height: 40px; /* Adjust to the height of the largest logo */
     width: auto;
 }
 
@@ -177,7 +171,7 @@ a.icon {
     position: absolute; /* Stack images on top of each other */
     top: 0;
     left: 0;
-    height: 40px; /* Ensure both logos have the same dimensions */
+    height: 30px; /* Ensure both logos have the same dimensions */
     width: auto;
     transition: opacity 0.3s ease; /* Smooth transition for logo change */
 }
