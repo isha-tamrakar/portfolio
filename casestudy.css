@@ -163,6 +163,10 @@ h5 {
     margin: 5px;
 }
 
+.image-padding {
+    margin-top: 20px;
+}
+
 .link {
     color: #af3730;
     font-size: calc(1rem / var(--scale-ratio));
@@ -502,7 +506,7 @@ h5.light-text {
         gap: 5%; /* Default gap for extra small devices */
         width: auto;
         max-width: 100%;
-        margin: 20px 0;
+        margin: 20px 0px;
     }
 
     .three-column-layout.gap, .two-column-layout.gap  {
